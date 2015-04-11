@@ -55,7 +55,7 @@ class listener implements EventSubscriberInterface
 	{
 		$tpl_vars = array(
 			'S_QUICK_LOGIN'       => true,
-			'U_SEND_PASSWORD_EXT' => ($this->config['email_enable']) ? append_sid("{$this->root_path}ucp.$this->phpEx", 'mode=sendpassword') : '',
+			//'U_SEND_PASSWORD_EXT' => ($this->config['email_enable']) ? append_sid("{$this->root_path}ucp.$this->phpEx", 'mode=sendpassword') : '',
 		);
 
 		$this->template->assign_vars($tpl_vars);
