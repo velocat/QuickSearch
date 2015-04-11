@@ -1,0 +1,31 @@
+{
+    "name": "velocat/quicksearch",
+    "type": "phpbb-extension",
+    "description": "Adds a simple quick search popup lightbox using JavaScript",
+    "homepage": "https://github.com/velocat/QuickSearch
+    "time": "2015-11-04",
+    "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "velocat",
+            "email": "admin@velocat.ru",
+            "homepage": "http://www.velocat.ru",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "display-name": "Quick Search",
+        "soft-require": {
+            "phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
+        },
+        "version-check": {
+            "host": "www.phpbb.com",
+			"directory": "/customise/db/extension/quick_search",
+			"filename": "version_check"
+        }
+    }
+}

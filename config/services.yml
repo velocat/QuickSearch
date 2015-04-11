@@ -1,0 +1,10 @@
+services:
+    velocat.quicksearch.listener:
+        class: velocat\quicksearch\event\listener
+        arguments:
+            - @config
+            - @template
+            - %core.root_path%
+            - %core.php_ext%
+        tags:
+            - { name: event.listener }
